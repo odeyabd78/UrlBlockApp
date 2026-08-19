@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net10.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
+    </PropertyGroup>
+    
+    <ItemGroup>
+      <None Update="appsettings.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Registration Files\Chrome-Full-AllowList.reg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Registration Files\Edge-Full-AllowList.reg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.1" />
+      <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.1" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Folder Include="Assets\" />
+      <Folder Include="Registration Files\" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <None Remove="Assets\AppIcon.ico" />
+      <Resource Include="Assets\AppIcon.ico" />
+      <None Remove="Assets\ChromeIcon.ico" />
+      <Resource Include="Assets\ChromeIcon.ico" />
+      <None Remove="Assets\ChromeIcon.png" />
+      <Resource Include="Assets\ChromeIcon.png" />
+      <None Remove="Assets\EdgeIcon.ico" />
+      <Resource Include="Assets\EdgeIcon.ico" />
+      <None Remove="Assets\EdgeIcon.png" />
+      <Resource Include="Assets\EdgeIcon.png" />
+    </ItemGroup>
+
+</Project>

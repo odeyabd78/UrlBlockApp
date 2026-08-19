@@ -1,0 +1,136 @@
+﻿# ==============================
+# .NET
+# ==============================
+
+bin/
+obj/
+
+[Bb]in/
+[Oo]bj/
+
+artifacts/
+
+# ==============================
+# JetBrains Rider
+# ==============================
+
+.idea/
+*.sln.iml
+
+# JetBrains user-specific settings
+*.DotSettings.user
+
+# Keep shared DotSettings if you add one
+# *.DotSettings
+
+# ==============================
+# Visual Studio
+# ==============================
+
+.vs/
+
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ==============================
+# Build output
+# ==============================
+
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+publish/
+
+# ==============================
+# NuGet
+# ==============================
+
+*.nupkg
+*.snupkg
+
+packages/
+
+# NuGet generated files
+*.nuget.props
+*.nuget.targets
+
+# ==============================
+# Test results
+# ==============================
+
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# ==============================
+# Logs
+# ==============================
+
+*.log
+logs/
+Logs/
+
+# ==============================
+# Temporary files
+# ==============================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# ==============================
+# Windows
+# ==============================
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ==============================
+# macOS
+# ==============================
+
+.DS_Store
+
+# ==============================
+# Generated registry files
+# ==============================
+# Uncomment these if your application
+# generates .reg files at runtime.
+
+# *.reg
+
+# Better alternative if generated
+# registry files are stored in one folder:
+#
+# Generated/
+# Output/
+
+# ==============================
+# Secrets / local configuration
+# ==============================
+
+appsettings.Local.json
+appsettings.Development.local.json
+secrets.json
+
+# Environment files
+.env
+.env.*
+
+# Allow an example environment file
+!.env.example
